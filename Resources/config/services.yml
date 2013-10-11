@@ -6,4 +6,4 @@ services:
         class: %access_listener.class%
         arguments: [ "@annotation_reader", "@security.context" ]
         tags:
-            - { name: kernel.event_subscriber }
+            - { name: kernel.event_subscriber, event: kernel.controller, method: onKernelController }
