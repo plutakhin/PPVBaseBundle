@@ -1,0 +1,9 @@
+parameters:
+    access_listener.class: PPV\BaseBundle\EventListener\AccessListener
+
+services:
+    access_listener:
+        class: %access_listener.class%
+        arguments: [ "@annotation_reader", "@security.context" ]
+        tags:
+            - { name: kernel.event_subscriber }

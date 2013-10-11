@@ -1,0 +1,20 @@
+{
+    "name": "ppv/base-bundle",
+    "description": "Base bundle",
+    "keywords": ["ppv"],
+    "type": "symfony-bundle",
+    "license": "Apache",
+    "authors": [
+        {
+            "name": "Pavel Plutakhin",
+            "email": "pavel.plutakhin@simbirsoft.com"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "2.*"
+    },
+    "autoload": {
+        "psr-0": { "PPV\\BaseBundle": "" }
+    },
+    "target-dir": "PPV/BaseBundle"
+}
